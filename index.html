@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <title>Basic routing</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="./dist/bundle.css" />
+  </head>
+
+  <body>
+    <a href="#">Home</a>
+    <a href="#pagelist">PageList</a>
+    <a href="#pagelist/borderlands">PageList borderlands</a>
+
+    <section id="pageContent">
+      <h3>Choisissez un jeu</h3>
+      <form action="">
+        <input type="text" placeholder="search...">
+        <button type="submit" value="submit">here we go !</button>
+      </form>
+    </section>
+
+    <script src="./src/js/Home.js"></script>
+    <script src="./src/js/PageList.js"></script>
+    <script src="./src/js/PageDetail.js"></script>
+    <script src="./src/js/routes.js"></script>
+    <script src="./src/js/index.js"></script>
+    <script src="./dist/bundle.js"></script>
+  </body>
+</html>
