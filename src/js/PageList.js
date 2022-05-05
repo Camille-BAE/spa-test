@@ -1,3 +1,5 @@
+const myKey = process.env.API_KEY;
+
 const PageList = (argument = '') => {
   /// console.log('Page List', argument);
   const preparePage = () => {
