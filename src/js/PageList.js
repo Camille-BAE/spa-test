@@ -26,7 +26,7 @@ const PageList = (argument = '') => {
         });
     };
 
-    fetchList(`https://api.rawg.io/api/games?key=${API_KEY}`, cleanedArgument);
+    fetchList(`https://api.rawg.io/api/games?key=${mykey}`, cleanedArgument);
   };
 
   const render = () => {
