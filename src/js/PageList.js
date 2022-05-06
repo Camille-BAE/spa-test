@@ -1,7 +1,4 @@
-const myKey = process.env.API_KEY;
-
-const PageList = (argument = '') => {
-  /// console.log('Page List', argument);
+const PageList = (argument) => {
   const preparePage = () => {
     const cleanedArgument = argument.trim().replace(/\s+/g, '-');
 
@@ -26,7 +23,7 @@ const PageList = (argument = '') => {
         });
     };
 
-    fetchList(`https://api.rawg.io/api/games?key=${mykey}`, cleanedArgument);
+    fetchList(`https://api.rawg.io/api/games?key=${process.env.API_KEY}`, cleanedArgument);
   };
 
   const render = () => {
@@ -41,3 +38,5 @@ const PageList = (argument = '') => {
 
   render();
 };
+
+export default PageList;

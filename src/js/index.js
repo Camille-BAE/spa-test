@@ -1,5 +1,7 @@
 import '../style/index.scss';
 import dayjs from 'dayjs';
+import routes from './routes';
+import PageList from './PageList';
 
 
 console.log(dayjs().format('MMMM DD YYYY'));
@@ -20,3 +22,7 @@ const callRoute = () => {
 
 window.addEventListener('hashchange', () => callRoute());
 window.addEventListener('DOMContentLoaded', () => callRoute());
+
+document.getElementById('button').addEventListener("click", function(){
+  PageList(document.getElementById('search').value);
+});

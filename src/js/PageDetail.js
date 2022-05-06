@@ -12,7 +12,7 @@ const PageDetail = (argument = '') => {
     };
 
     const fetchGame = (url, argument) => {
-      fetch(`${url}/${argument}?key=${API_KEY}`)
+      fetch(`${url}/${argument}?key=${process.env.API_KEY}`)
         .then((response) => response.json())
         .then((responseData) => {
           displayGame(responseData);
@@ -38,3 +38,4 @@ const PageDetail = (argument = '') => {
 
   render();
 };
+export default PageDetail;
